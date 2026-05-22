@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-kids: var(--font-kids), sans-serif;
+  --font-sans: var(--font-sans), sans-serif;
+  
+  --color-brand-primary: #00AEEF;
+  --color-brand-secondary: #4ecdc4;
+  --color-brand-orange: #FF7F32;
+  --color-brand-green: #82BC00;
+  --color-brand-accent: #45b7d1;
+  --color-brand-dark: #1e293b;
+}
+
+/* Custom continuous glowing animation for active character avatar state */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0px rgba(78, 205, 196, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 12px rgba(78, 205, 196, 0);
+  }
+}
+
+.active-character-pulse {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.bento-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+}
+
+.bento-card:hover {
+  border-color: #00AEEF;
+  transform: translateY(-2px);
+}
+
+

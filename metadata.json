@@ -1,0 +1,6 @@
+{
+  "name": "Turminha do Bem",
+  "description": "Apresentação e relatório interativo do podcast infantil sobre os Direitos das Crianças e do Adolescente (ECA). Inclusivo, educativo e divertido.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
