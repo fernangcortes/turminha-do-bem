@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fredoka, Plus_Jakarta_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css"; // Global styles
 
 const fredoka = Fredoka({
@@ -45,6 +46,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${fredoka.variable} ${plusJakartaSans.variable} scroll-smooth`}>
       <body className="antialiased font-sans bg-[#F0F9FF] text-[#333]" suppressHydrationWarning>
         {children}
+        <Analytics />
       </body>
     </html>
   );
