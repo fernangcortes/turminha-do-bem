@@ -1013,7 +1013,7 @@ export default function Page() {
       <div className="py-4 mt-6" id="contents-navigation">
         <div 
           className="max-w-6xl mx-auto px-4 overflow-x-auto flex gap-2 justify-start md:justify-center scrollbar-none"
-          style={{ paddingTop: "8px", marginLeft: "106.5px", marginTop: "0px", paddingBottom: "9px" }}
+          style={{ paddingTop: "8px", marginTop: "0px", paddingBottom: "9px" }}
         >
           {[
             { id: "overview", label: "Visão Geral", icon: BookOpen },
